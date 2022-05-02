@@ -9,12 +9,12 @@ describe("Test para ExplorerController", () => {
     });
 
     test("Test de getExplorersUsernamesByMission", () => {
-        const ExplorersUsernamesByMission = ExplorerController.getExplorersUsernamesByMission("node");
+        const ExplorersUsernamesByMission = ExplorerController.getExplorersAmonutByMission("node");
         expect(ExplorersUsernamesByMission).toBe(10);
     });
 
     test("Test de getExplorersAmonutByMission", () => {
-        const ExplorersAmonutByMission = ExplorerController.getExplorersAmonutByMission("node");
+        const ExplorersAmonutByMission = ExplorerController.getExplorersUsernamesByMission("node");
         expect(ExplorersAmonutByMission).not.toBeUndefined();
     });
 
