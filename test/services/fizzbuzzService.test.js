@@ -1,5 +1,5 @@
-const FizzBuzzService = require("../../lib/services/fizzbuzzService");
-const Reader = require("../../lib/utils/reader");
+const FizzBuzzService = require("../../lib/services/FizzbuzzService");
+const Reader = require("../../lib/utils/Reader");
 
 describe("Test para FizzBuzzService", () => {
     test("Método applyValidationInExplorer", () => {
