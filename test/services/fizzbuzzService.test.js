@@ -1,9 +1,9 @@
-const FizzBuzzService = require('../../lib/services/fizzbuzzService');
-const Reader = require("../../lib/utils/reader")
+const FizzBuzzService = require("../../lib/services/fizzbuzzService");
+const Reader = require("../../lib/utils/reader");
 
-describe('Test para FizzBuzzService', () => {
-    test('Método applyValidationInExplorer', () => {
-        const applyValidationInExplorer = FizzBuzzService.applyValidationInExplorer(Reader.readJsonFile("explorers.json"), "node");
+describe("Test para FizzBuzzService", () => {
+    test("Método applyValidationInExplorer", () => {
+        const applyValidationInExplorer = FizzBuzzService.applyValidationInExplorer(Reader.readJsonFile("explorers.json"));
         applyValidationInExplorer.forEach(explorer => {
             if(explorer.score%5 === 0 && explorer.score%3 === 0){
                 expect(explorer.trick).toBe("FIZZBUZZ");
